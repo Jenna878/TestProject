@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор паролей</title>
+    <style>
+        .wrapper {
+            width: 100%;
+            height: 600px;
+            background-color: rgba(0, 0, 0, 0.158);
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 30px;
+
+        }
+        h1 {
+            text-align: center;
+        }
+        .submit {
+            background-color: blueviolet;
+            width: 250px;
+            height: 50px;
+            color: white;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: green;
+        }   
+        a:focus {
+            color:red;
+        }
+        
+        a:hover {
+            background-color: yellow;
+        }
+        
+
+    </style>
+</head>
+<body alink="(% url 'about' %)green" vlink="(% url 'about' %)red" link="(% url 'about' %)ff00ff">
+    <h1>Генератор паролей</h1>
+
+    <div class="wrapper">
+        <form action="password">
+            Длина пароля:
+            <select name="lenght">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <br>
+                <input type="checkbox" name="uppercase"> Uppercase
+            <br>
+                <input type="checkbox" name="numbers"> Numbers
+            <br>
+                <input type="checkbox" name="special"> Special icons
+            <br>
+            <br>
+                <button type="submit" class="submit">СГЕНЕРИРОВАТЬ</button> 
+
+        </form>
+    </div>
+        
+    <p><a target="_blank"  href="(% url 'about' %)">About</a><br>
+    <a target="_blank" href="(% url 'Next' %)">Next</a></p>
+</body>
+</html>
